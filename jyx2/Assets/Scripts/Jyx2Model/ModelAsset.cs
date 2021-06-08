@@ -9,11 +9,10 @@ using Hanjiasongshu.ThreeD.XML;
 using HanSquirrel.ResourceManager;
 using HSFrameWork.ConfigTable;
 using Sirenix.OdinInspector;
+using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities;
-#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.SceneManagement;
-#endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
@@ -241,7 +240,6 @@ namespace Jyx2
             m_OffsetScale = Vector3.one;
         }
 
-        #if UNITY_EDITOR
         private void LoadDefaultView()
         {
             switch (m_Id)
@@ -265,7 +263,6 @@ namespace Jyx2
             
             AssetDatabase.SaveAssets();
         }
-        #endif
     }
     
     [SerializeField]

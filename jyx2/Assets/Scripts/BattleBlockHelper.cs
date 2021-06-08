@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using ch.sycoforge.Decal;
 using Jyx2;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 

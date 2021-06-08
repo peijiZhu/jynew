@@ -48,7 +48,7 @@ namespace UnityToolbarExtender.Examples
         }
 	}
 
-	public static class SceneHelper
+	static class SceneHelper
 	{
 		static string sceneToOpen;
 

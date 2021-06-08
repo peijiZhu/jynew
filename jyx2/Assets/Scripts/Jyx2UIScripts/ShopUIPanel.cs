@@ -14,7 +14,7 @@ public partial class ShopUIPanel:Jyx2_UIBase
     int curSelectIndex = 0;
     ShopUIItem curSelectItem;
 
-    Dictionary<int, int> currentBuyCount = new Dictionary<int, int>();//ï¿½ï¿½Ç°ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
+    Dictionary<int, int> currentBuyCount = new Dictionary<int, int>();//µ±Ç°ÒÑ¾­¹ºÂòµÄÎïÆ·ÊýÁ¿
     protected override void OnCreate()
     {
         InitTrans();
@@ -63,7 +63,7 @@ public partial class ShopUIPanel:Jyx2_UIBase
     void RefreshMoney() 
     {
         int num = GameRuntimeData.Instance.GetMoney();
-        MoneyNum_Text.text = $"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:{num}";
+        MoneyNum_Text.text = $"³ÖÓÐÒøÁ½:{num}";
     }
 
     void RefreshChild() 
@@ -129,13 +129,13 @@ public partial class ShopUIPanel:Jyx2_UIBase
         int moneyCost = count * item.Price;
         if (GameRuntimeData.Instance.GetMoney() < moneyCost) 
         {
-            GameUtil.DisplayPopinfo("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+            GameUtil.DisplayPopinfo("ÒøÁ½²»¹»");
             return;
         }
         GameRuntimeData.Instance.AddItem(item.Id, count);
         AddBuyCount(item.Id, count);
-        GameUtil.DisplayPopinfo($"ï¿½ï¿½ï¿½ï¿½ï¿½Æ·{itemCfg.Name},ï¿½ï¿½ï¿½ï¿½{count}");
-        GameRuntimeData.Instance.AddItem(GameConst.MONEY_ID, -moneyCost);
+        GameUtil.DisplayPopinfo($"»ñµÃÎïÆ·{itemCfg.Name},ÊýÁ¿{count}");
+        GameRuntimeData.Instance.AddItem(Jyx2Consts.MONEY_ID, -moneyCost);
 
         RefreshChild();
         RefreshMoney();

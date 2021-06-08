@@ -134,11 +134,6 @@ public class GameEvent : MonoBehaviour
         if (Jyx2Player.GetPlayer().IsOnBoat)
             return;
 
-        Vector3 targetDir = Vector3.Normalize(this.transform.position - other.transform.position);
-        float dot = Vector3.Dot(other.transform.forward, targetDir);
-        if (dot <= 0.5)
-            return;
-
         evtManager.OnTriggerEvent(this);
     }
 
@@ -148,11 +143,6 @@ public class GameEvent : MonoBehaviour
             return;
 
         if (Jyx2Player.GetPlayer().IsOnBoat)
-            return;
-
-        Vector3 targetDir = Vector3.Normalize(this.transform.position - other.transform.position);
-        float dot = Vector3.Dot(other.transform.forward, targetDir);
-        if (dot <= 0.5)
             return;
 
         evtManager.OnTriggerEvent(this);
