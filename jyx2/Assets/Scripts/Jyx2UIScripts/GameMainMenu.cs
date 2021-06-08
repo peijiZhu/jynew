@@ -148,6 +148,12 @@ public partial class GameMainMenu : Jyx2_UIBase {
         m_randomProperty. RefreshProperty();
     }
 
+    public void OnCloseCreateRoleClick()
+    {
+        this.homeBtnAndTxtPanel_RectTransform.gameObject.SetActive(true);
+        this.InputNamePanel_RectTransform.gameObject.SetActive(false);
+    }
+
     protected override void OnHidePanel()
     {
         base.OnHidePanel();
