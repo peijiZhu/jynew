@@ -1,5 +1,17 @@
 # 金庸群侠传3D重制版
 
+![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
+[![license](https://img.shields.io/badge/license-MIT%2B%E9%87%91%E7%BE%A43D%E9%87%8D%E7%BD%AE%E7%89%88%E7%A4%BE%E5%8C%BA%E5%8D%8F%E8%AE%AE-blue)](https://github.com/jynew/jynew/blob/main/LICENSE)
+[![release](https://img.shields.io/badge/release-v0.1%20inner-brightgreen)](https://github.com/jynew/jynew/releases)
+[![Unity Version](https://img.shields.io/badge/unity-2020.3.9.f1c1-blue)](https://unity.cn/releases/lts/2020) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](https://github.com/jynew/jynew/pulls) 
+![commit](https://img.shields.io/github/last-commit/jynew/jynew)<br>
+![Contributors](https://img.shields.io/github/contributors-anon/jynew/jynew) 
+![fork](https://img.shields.io/github/forks/jynew/jynew?style=social)
+![star](https://img.shields.io/github/stars/jynew/jynew?style=social)
+
+
+
 
 * 项目主页 http://www.jy-new.com
 * B站主页 https://space.bilibili.com/1092529660
@@ -94,7 +106,7 @@
 * 代码符合既定风格和编码规范，能正常编译通过，有自测(目前项目没有单元测试，请自测，逻辑需符合《金庸群侠传》DOS版，或作为后续MOD可扩展功能存在)
 * 每次Pull Request只做一件事，或者实现一类功能（方便追溯）
 * Pull Request请尽量自行解决完与最新版本的冲突
-* 资源提交符合当前*项目标准(TODO)*
+* 资源提交符合当前项目标准
 * 长期参与代码贡献的开发者可以被添加直接Write（免PullRequest）权限
 
 ## 授权声明
@@ -116,3 +128,8 @@
 ## 参考项目
 
 [kyscpp](https://github.com/scarsty/kys-cpp)
+
+## 特别补充说明
+
+以下插件仅供学习使用，若希望使用它还请自行购买重新导入：<br>
+[Odin Inspector](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)
