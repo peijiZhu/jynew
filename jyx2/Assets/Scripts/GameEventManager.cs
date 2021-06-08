@@ -79,6 +79,9 @@ public class GameEventManager : MonoBehaviour
         if (!isEnterEvent(evt) && isInteractiveOrUseItemEvent(curEvent))
             return false;
 
+        //比较触发角度
+        if (curEvent != null && curEvent.TraggerDotVlue > evt.TraggerDotVlue)
+            return false;
 
         //关闭之前的事件
         if (curEvent != null && curEvent != evt)
